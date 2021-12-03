@@ -18,10 +18,3 @@ if pcall(require, 'plenary') then
     return require(name)
   end
 end
-
--- require'lspinstall'.setup()
--- local servers = require'lspinstall'.installed_servers()
--- for _, server in pairs(servers) do
---   require'lspconfig'[server].setup{}
--- end
-

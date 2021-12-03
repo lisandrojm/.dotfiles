@@ -216,7 +216,9 @@ augroup THE_PRIMEAGEN
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
 augroup END
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" /lisandrojm
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" /lisandrojm
+
 
 set mouse=a
 
@@ -235,7 +237,7 @@ nnoremap <Leader>; $a;<Esc>
 nnoremap <Leader>z :w<CR>
 " nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :q!<CR>
+" nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>ññ :q!<CR>
 nnoremap <Leader>wq :wq<CR>
 " nnoremap <Leader>5 :so%<CR>
@@ -260,3 +262,5 @@ let g:gitgutter_map_keys = 0
 
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
+" Plug 'tpope/vim-surround'
+nmap <Leader>9 ysiw

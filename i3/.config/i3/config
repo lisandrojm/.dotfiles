@@ -159,3 +159,5 @@ focus_follows_mouse no
 
 for_window [class="^.*"] border pixel 3
 
+# Autostart kitty terminal
+exec --no-startup-id i3-msg 'workspace 2; exec kitty'
