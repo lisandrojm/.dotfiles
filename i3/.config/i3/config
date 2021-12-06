@@ -161,3 +161,8 @@ for_window [class="^.*"] border pixel 3
 
 # Autostart kitty terminal
 exec --no-startup-id i3-msg 'workspace 2; exec kitty'
+
+# browsers workspaces
+assign [class="Brave-browser"] workspace 1
+assign [class="Firefox"] workspace 3
+assign [class="Google"] workspace 3

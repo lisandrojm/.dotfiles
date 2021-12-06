@@ -243,14 +243,16 @@ nnoremap <Leader>wq :wq<CR>
 " nnoremap <Leader>5 :so%<CR>
 nnoremap <leader><Enter> :so%<CR>
 
-" nnoremap <Leader>% :so%<CR
-
 " moves the cursor to the first/last non-blank character of the current line
 nnoremap <Leader>l $
 nnoremap <Leader>h _
 
 " Neoformat
 nnoremap <Leader>, :Neoformat<CR>
+
+" Quickly insert an emptiy new line without entering insert mode
+nnoremap <Leader>o o<Esc>
+nnoremap <Leader>O O<Esc>
 
 " Autocompletion css
 filetype plugin on
