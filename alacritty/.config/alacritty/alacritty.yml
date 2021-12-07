@@ -240,7 +240,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#1B1D1E'
+    background: '#000000'
     foreground: '#F8F8F2'
   # Normal colors
   normal:
