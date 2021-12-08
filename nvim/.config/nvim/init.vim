@@ -107,6 +107,9 @@ Plug 'github/copilot.vim'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 " Type tabnine::config to configure
 " Uncheck Enable Deep Completions-Local
+
+Plug 'p00f/nvim-ts-rainbow'
+
 call plug#end()
 
 " Adding local modules
@@ -118,7 +121,7 @@ let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/printfyou'
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 lua require("theprimeagen")
-lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}
+lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }, rainbow = { enable = true }}
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
 
