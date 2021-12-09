@@ -227,9 +227,9 @@ set mouse=a
 " imap jk <Esc>
 
 " emmet-vim leader key changed from <C-y> to <C-p>
-let g:user_emmet_leader_key='<C-p>'
+let g:user_emmet_leader_key='<C-i>'
 " emmet imap <C-y> to <C-p>
-imap ññ <C-p>,
+imap ññ <C-i>,
 
 map <Leader>nt :NERDTreeFind<CR>
 
