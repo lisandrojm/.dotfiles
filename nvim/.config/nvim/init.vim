@@ -270,4 +270,6 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Plug 'tpope/vim-surround'
 nmap <Leader>9 ysiw
 
+" Map delete key to <C-l>
+inoremap <C-l> <Del>
 
