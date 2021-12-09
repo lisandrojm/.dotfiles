@@ -227,9 +227,10 @@ set mouse=a
 
 imap jk <Esc>
 
-" emmet
-" imap ,, <C-y>,
-imap ññ <C-y>,
+" emmet-vim leader key changed from <C-y> to <C-p>
+let g:user_emmet_leader_key='<C-p>'
+" emmet imap <C-y> to <C-p>
+imap ññ <C-p>,
 
 map <Leader>nt :NERDTreeFind<CR>
 
@@ -269,3 +270,5 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Plug 'tpope/vim-surround'
 nmap <Leader>9 ysiw
+
+
