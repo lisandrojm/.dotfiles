@@ -37,3 +37,6 @@ set colorcolumn=80
 
 " lisandrojm
 " set cursorline
+
+" Set Splitscreen
+set splitbelow splitright
