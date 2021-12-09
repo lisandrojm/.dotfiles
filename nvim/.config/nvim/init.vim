@@ -191,7 +191,7 @@ let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
 
 nnoremap <Leader>ww ofunction wait(ms: number): Promise<void> {<CR>return new Promise(res => setTimeout(res, ms));<CR>}<esc>k=i{<CR>
 
-inoremap <C-c> <esc>
+" inoremap <C-c> <esc>
 
 fun! EmptyRegisters()
     let regs=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
@@ -222,10 +222,9 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " /lisandrojm
 
-
 set mouse=a
 
-imap jk <Esc>
+" imap jk <Esc>
 
 " emmet-vim leader key changed from <C-y> to <C-p>
 let g:user_emmet_leader_key='<C-p>'
