@@ -1,8 +1,6 @@
 -- local sumneko_root_path = "/home/theprimeagen/personal/lua-language-server"
 -- local sumneko_binary = sumneko_root_path .. "/bin/Linux/lua-language-server"
 
-vim.lsp.set_log_level("debug")
-
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
@@ -33,14 +31,15 @@ cmp.setup({
 			-- vim.fn["UltiSnips#Anon"](args.body)
 		end,
 	},
-    mapping = {
-      ["<C-u>"] = cmp.mapping.scroll_docs(-4),
-	  ["<C-d>"] = cmp.mapping.scroll_docs(4),
-	  ["<C-Space>"] = cmp.mapping.complete(),
-      ['<C-c>'] = cmp.mapping.close(),
-      ['<C-e>'] = cmp.mapping.abort(),
-      ['<CR>'] = cmp.mapping.confirm(),
-    },
+	mapping = {
+		["<C-u>"] = cmp.mapping.scroll_docs(-4),
+		["<C-d>"] = cmp.mapping.scroll_docs(4),
+		["<C-Space>"] = cmp.mapping.complete(),
+        ["<C-c>"] = cmp.mapping.close(),
+        ["<C-e>"] = cmp.mapping.abort(),
+        ["<CR>"] = cmp.mapping.confirm(),
+	},
+
     formatting = {
         format = function(entry, vim_item)
             vim_item.kind = lspkind.presets.default[vim_item.kind]
@@ -57,7 +56,7 @@ cmp.setup({
     },
 
 	sources = {
-        -- tabnine completion
+        -- tabnine completion? yayaya
 
         { name = "cmp_tabnine" },
 
@@ -93,7 +92,7 @@ end
 
 require("lspconfig").tsserver.setup(config())
 
---[[  I cannot seem to get this working on new computer..
+--[[  I cannot seem to get this woring on new computer..
 require("lspconfig").clangd.setup(config({
 	cmd = { "clangd", "--background-index", "--log=verbose" },
     root_dir = function()
@@ -114,9 +113,6 @@ require("lspconfig").cssls.setup(config())
 
 require("lspconfig").html.setup(config())
 
--- Ram excessively uses
--- require("lspconfig").pyright.setup(config())
-
 require("lspconfig").gopls.setup(config({
 	cmd = { "gopls", "serve" },
 	settings = {
@@ -130,7 +126,18 @@ require("lspconfig").gopls.setup(config({
 }))
 
 -- who even uses this?
-require("lspconfig").rust_analyzer.setup(config({}))
+require("lspconfig").rust_analyzer.setup(config({
+    cmd = { "rustup", "run", "nightly", "rust-analyzer"},
+    --[[
+    settings = {
+        rust = {
+            unstable_features = true,
+            build_on_save = false,
+            all_features = true,
+        },
+    }
+    --]]
+}))
 
 -- require("lspconfig").sumneko_lua.setup(config({
 --     cmd = { sumneko_binary, "-E", sumneko_root_path .. "/main.lua" },

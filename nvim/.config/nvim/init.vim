@@ -108,6 +108,7 @@ Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 " Type tabnine::config to configure
 " Uncheck Enable Deep Completions-Local
 
+" ts-rainbow
 Plug 'p00f/nvim-ts-rainbow'
 
 call plug#end()
