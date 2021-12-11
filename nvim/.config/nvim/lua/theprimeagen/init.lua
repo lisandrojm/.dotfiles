@@ -4,6 +4,7 @@ require("theprimeagen.harpoon")
 -- require("theprimeagen.statusline")
 require("theprimeagen.debugger")
 require("theprimeagen.lsp")
+require('rust-tools').setup({})
 
 P = function(v)
   print(vim.inspect(v))

@@ -21,6 +21,7 @@ Plug 'ambv/black'
 " Plebvim lsp Plugins
 Plug 'neovim/nvim-lspconfig'
 " Plug 'hrsh7th/nvim-compe'
+Plug 'nvim-lua/lsp_extensions.nvim'
 
 " nvim-cmp
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -110,6 +111,9 @@ Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 
 " ts-rainbow
 Plug 'p00f/nvim-ts-rainbow'
+
+" rust-tools
+Plug 'simrat39/rust-tools.nvim'
 
 call plug#end()
 
@@ -217,8 +221,12 @@ augroup THE_PRIMEAGEN
     autocmd!
     autocmd BufWritePre lua,cpp,c,h,hpp,cxx,cc Neoformat
     autocmd BufWritePre * %s/\s\+$//e
-    autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
-augroup END
+    " autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
+    augroup END
+
+" /lisandrojm
+"For Plug 'nvim-lua/lsp_extensions.nvim'
+nnoremap <Leader>T :lua require'lsp_extensions'.inlay_hints()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " /lisandrojm
