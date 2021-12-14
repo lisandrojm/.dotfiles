@@ -95,7 +95,6 @@ Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdcommenter'
 Plug 'mattn/emmet-vim'
 " Plug 'kabouzeid/nvim-lspinstall'
-Plug 'yggdroot/indentline'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
@@ -118,15 +117,15 @@ Plug 'simrat39/rust-tools.nvim'
 call plug#end()
 
 " Adding local modules
-let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
-let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
-let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
-" let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/language-feta'
-let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/printfyou'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/master'
+
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 lua require("theprimeagen")
-lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }, rainbow = { enable = true }}
+lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }, rainbow = { enable = true, extended_mode = true }}
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
 
