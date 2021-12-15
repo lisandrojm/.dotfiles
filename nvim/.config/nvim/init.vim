@@ -107,25 +107,22 @@ Plug 'github/copilot.vim'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 " Type tabnine::config to configure
 " Uncheck Enable Deep Completions-Local
-
-" ts-rainbow
-Plug 'p00f/nvim-ts-rainbow'
-
+"
 " rust-tools
 Plug 'simrat39/rust-tools.nvim'
 
 call plug#end()
 
 " Adding local modules
-" let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
-" let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
-" let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
-" let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/master'
+let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
+let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
+let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
+let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/master'
 
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 lua require("theprimeagen")
-lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }, rainbow = { enable = true, extended_mode = true }}
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true }, indent = { enable = false }, incremental_selection = { enable = true }, textobjects = { enable = true }}
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
 

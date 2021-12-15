@@ -34,10 +34,3 @@ call ColorMyPencils()
 " Vim with me
 nnoremap <leader>cmp :call ColorMyPencils()<CR>
 nnoremap <leader>vwb :let g:theprimeagen_colorscheme =
-
-" Rainbow
-hi rainbowcol1 guifg= #fb4934
-hi rainbowcol2 guifg= #fe8019
-hi rainbowcol3 guifg= #fb4934
-hi rainbowcol4 guifg= #fe8019
-hi rainbowcol6 guifg= #fb4934
