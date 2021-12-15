@@ -277,3 +277,5 @@ nmap <Leader>9 ysiw
 " Map delete key to <C-l>
 inoremap <C-l> <Del>
 
+" Remove blank lines
+nnoremap <Leader>b :g/^$/d<CR>
