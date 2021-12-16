@@ -15,18 +15,13 @@ fun! ColorMyPencils()
         colorscheme gruvbox
     endif
 
-    " highlight ColorColumn ctermbg=9 guibg=grey
     hi SignColumn guibg=none
     hi CursorLineNR guibg=None
-    highlight Normal guibg=none
-    " highlight LineNr guifg=#ff8659
-    " highlight LineNr guifg=#aed75f
-    highlight LineNr guifg=#5eacd3
-    highlight netrwDir guifg=#5eacd3
-    highlight qfFileName guifg=#aed75f
+    hi Normal guibg=none
+    hi LineNr guifg=#5eacd3
+    hi netrwDir guifg=#5eacd3
+    hi qfFileName guifg=#aed75f
     hi TelescopeBorder guifg=#5eacd
-    " lisandrojm
-    "highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 endfun
 call ColorMyPencils()
@@ -34,3 +29,14 @@ call ColorMyPencils()
 " Vim with me
 nnoremap <leader>cmp :call ColorMyPencils()<CR>
 nnoremap <leader>vwb :let g:theprimeagen_colorscheme =
+
+" lisandrojm colors
+"Html highlighting
+hi htmltag guifg=#fe8019
+hi htmlEndtag guifg=#fe8019
+hi htmlTagName guifg=#fb4934
+hi htmlArg  ctermfg=182  guifg=#8ec07c
+hi htmlValue guifg=#dfdfaf
+" hi htmlTitle ctermfg=254  ctermbg=95 guifg=#8ec07c
+" hi htmlString     ctermfg=187
+" highlight htmlComment guifg=#fe8019
