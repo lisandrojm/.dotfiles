@@ -16,7 +16,7 @@ fun! ColorMyPencils()
     endif
 
     hi SignColumn guibg=none
-    hi CursorLineNR guibg=None
+    hi CursorLineNR guibg=none
     hi Normal guibg=none
     hi LineNr guifg=#5eacd3
     hi netrwDir guifg=#5eacd3
@@ -30,13 +30,18 @@ call ColorMyPencils()
 nnoremap <leader>cmp :call ColorMyPencils()<CR>
 nnoremap <leader>vwb :let g:theprimeagen_colorscheme =
 
-" lisandrojm colors
-"Html highlighting
+" lisandrojm
+" Html highlighting
 hi htmltag guifg=#fe8019
 hi htmlEndtag guifg=#fe8019
 hi htmlTagName guifg=#fb4934
 hi htmlArg  ctermfg=182  guifg=#8ec07c
 hi htmlValue guifg=#dfdfaf
-" hi htmlTitle ctermfg=254  ctermbg=95 guifg=#8ec07c
-" hi htmlString     ctermfg=187
-" highlight htmlComment guifg=#fe8019
+
+" GitGutter
+hi GitGutterAdd    guifg=#b8bb26 ctermfg=2
+hi GitGutterChange guifg=#fe8019 ctermfg=3
+hi GitGutterDelete guifg=#fb4934 ctermfg=1
+
+" Vertically split
+hi VertSplit guibg=none
