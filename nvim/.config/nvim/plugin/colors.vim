@@ -17,6 +17,7 @@ fun! ColorMyPencils()
 
     hi SignColumn guibg=none
     hi CursorLineNR guibg=none
+    hi CursorLine guibg=none
     hi Normal guibg=none
     hi LineNr guifg=#5eacd3
     hi netrwDir guifg=#5eacd3
@@ -45,3 +46,14 @@ hi GitGutterDelete guifg=#fb4934 ctermfg=1
 
 " Vertically split
 hi VertSplit guibg=none
+
+" NerdTree
+augroup NerdCursor
+  autocmd!
+  autocmd BufEnter NERD_tree_* hi CursorLine guibg=#282828
+  autocmd BufLeave NERD_tree_* highlight clear CursorLine
+  autocmd BufAdd * highlight clear CursorLine
+augroup END
+
+" ColorColumn
+hi ColorColumn guibg=#282828
