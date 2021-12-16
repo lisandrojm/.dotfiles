@@ -57,3 +57,7 @@ augroup END
 
 " ColorColumn
 hi ColorColumn guibg=#282828
+
+" Menu
+highlight Pmenu ctermbg=gray guibg=#32302f
+highlight PmenuSel ctermbg=gray guibg=#928374 guifg=#282828
