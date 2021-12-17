@@ -114,10 +114,10 @@ Plug 'simrat39/rust-tools.nvim'
 call plug#end()
 
 " Adding local modules
-let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
-let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
-let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
-let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/master'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
+" let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/master'
 
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
