@@ -275,4 +275,4 @@ nmap <Leader>9 ysiw
 inoremap <C-l> <Del>
 
 " Remove blank lines
-nnoremap <Leader>b :g/^$/d<CR>
+nnoremap <Leader>bb :g/^$/d<CR>
