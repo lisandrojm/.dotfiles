@@ -67,7 +67,7 @@ cmp.setup({
 		-- For vsnip user.
 		-- { name = 'vsnip' },
 
-        -- For luasnip user.
+	-- For luasnip user.
 		{ name = "luasnip" },
 
 		-- For ultisnips user.
@@ -199,3 +199,23 @@ require("luasnip.loaders.from_vscode").lazy_load({
 	include = nil, -- Load all languages
 	exclude = {},
 })
+
+-- 'williamboman/nvim-lsp-installer' setup
+
+local lsp_installer = require "nvim-lsp-installer"
+
+-- Include the servers you want to have installed by default below
+local servers = {
+  "sumneko_lua",
+}
+
+for _, name in pairs(servers) do
+  local server_is_found, server = lsp_installer.get_server(name)
+  if server_is_found then
+    if not server:is_installed() then
+      print("Installing " .. name)
+      server:install()
+    end
+  end
+end
+
