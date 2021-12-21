@@ -199,3 +199,31 @@ require("lspconfig").html.setup(config({
 require("lspconfig").tsserver.setup(config({
     on_attach = on_attach
 }))
+
+require("lspconfig").gopls.setup(config({
+	cmd = { "gopls", "serve" },
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+		},
+	},
+    on_attach = on_attach
+}))
+
+-- who even uses this?
+require("lspconfig").rust_analyzer.setup(config({
+    cmd = { "rustup", "run", "nightly", "rust-analyzer"},
+    --[[
+    settings = {
+        rust = {
+            unstable_features = true,
+            build_on_save = false,
+            all_features = true,
+        },
+    }
+--]]
+}))
+
