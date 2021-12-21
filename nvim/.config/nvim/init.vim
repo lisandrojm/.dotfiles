@@ -1,4 +1,3 @@
-" hello front end mastersghp_y0yzjomrpkxyza61y903wizogw5yon09krhp
 set path+=**
 
 " Nice menu when typing `:find *.py`
@@ -31,14 +30,10 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind-nvim'
 
-" nvim-lsp-instller
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'hrsh7th/cmp-nvim-lua'
-Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
-
 " Plug 'nvim-lua/completion-nvim'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'simrat39/symbols-outline.nvim'
+Plug 'hrsh7th/cmp-nvim-lua'
 " Plug 'tjdevries/nlua.nvim'
 " Plug 'tjdevries/lsp_extensions.nvim'
 
