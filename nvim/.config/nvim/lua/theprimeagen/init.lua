@@ -1,7 +1,6 @@
 require("theprimeagen.telescope")
 require("theprimeagen.git-worktree")
 require("theprimeagen.harpoon")
--- require("theprimeagen.statusline")
 require("theprimeagen.debugger")
 require("theprimeagen.lsp")
 require('rust-tools').setup({})
