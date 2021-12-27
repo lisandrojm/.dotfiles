@@ -111,6 +111,9 @@ Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 " rust-tools
 Plug 'simrat39/rust-tools.nvim'
 
+" lspsaga fork
+Plug 'tami5/lspsaga.nvim'
+
 call plug#end()
 
 " Adding local modules

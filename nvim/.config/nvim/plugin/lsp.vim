@@ -19,6 +19,18 @@ nnoremap <leader>vn :lua vim.lsp.diagnostic.goto_next()<CR>
 
 nnoremap <leader>vll :call LspLocationList()<CR>
 
+"lspsaga fork maps
+nnoremap <silent> <leader>ñe :Lspsaga rename<CR>
+nnoremap <silent> <leader>ñc :Lspsaga code_action<CR>
+nnoremap <silent> <leader>ñrc :Lspsaga range_code_action<CR>
+nnoremap <silent> <leader>ñh :Lspsaga hover_doc<CR>
+nnoremap <silent> <leader>ñg :Lspsaga show_line_diagnostics<CR>
+nnoremap <silent> <leader>ñn :Lspsaga diagnostic_jump_next<CR>
+nnoremap <silent> <leader>ñp :Lspsaga diagnostic_jump_prev<CR>
+nnoremap <silent> <leader>ñi :Lspsaga implement<CR>
+nnoremap <silent> <leader>ñs :Lspsaga signature_help<CR>
+" ------------------------------------------------------------------
+
 augroup THE_PRIMEAGEN_LSP
     autocmd!
     autocmd! BufWrite,BufEnter,InsertLeave * :call LspLocationList()
@@ -47,3 +59,5 @@ let g:compe.source.nvim_lua = v:true
 let g:compe.source.vsnip = v:true
 let g:compe.source.ultisnips = v:true
 let g:compe.source.luasnip = v:true
+" ------------------------------------------------------------------
+
