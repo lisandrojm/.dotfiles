@@ -29,6 +29,9 @@ nnoremap <silent> <leader>ñn :Lspsaga diagnostic_jump_next<CR>
 nnoremap <silent> <leader>ñp :Lspsaga diagnostic_jump_prev<CR>
 nnoremap <silent> <leader>ñi :Lspsaga implement<CR>
 nnoremap <silent> <leader>ñs :Lspsaga signature_help<CR>
+nnoremap <silent> <leader>ñf :Lspsaga lsp_finder<CR>
+nnoremap <silent> <leader>ñt :Lspsaga open_floaterm<CR>
+tnoremap <silent> <leader>ñx :Lspsaga close_floaterm<CR>
 " ------------------------------------------------------------------
 
 augroup THE_PRIMEAGEN_LSP

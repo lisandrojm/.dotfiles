@@ -61,3 +61,35 @@ hi ColorColumn guibg=#282828
 " Menu
 highlight Pmenu ctermbg=gray guibg=#32302f
 highlight PmenuSel ctermbg=gray guibg=#928374 guifg=#282828
+
+" lspsaga fork
+highlight LspSagaHoverBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspFloatWinBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspSagaRenameBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspLinesDiagBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspSagaCodeActionBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspSagaDefPreviewBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspSagaSignatureHelpBorder guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight LspSagaBorderTitle guifg=#504945 cterm=bold gui=bold cterm=bold gui=bold
+highlight ReferencesCount guifg=#b8bb26
+highlight DefinitionCount guifg=#b8bb26
+highlight TargetFileName guifg=#b8bb26
+highlight DefinitionIcon guifg=#b8bb26
+highlight ReferencesIcon guifg=#b8bb26
+highlight SagaShadow guifg=#b8bb26
+highlight LspSagaFinderSelection guifg=#fabd2f
+highlight DiagnosticError guifg=#b8bb26
+highlight DiagnosticWarning guifg=#b8bb26
+highlight DiagnosticInformation guifg=#b8bb26
+highlight DiagnosticHint guifg=#b8bb26
+highlight DefinitionPreviewTitle guifg=#d3869b
+highlight LspSagaCodeActionTitle guifg=#d3869b
+highlight LspSagaCodeActionContent guifg=#fabd2f
+highlight LspSagaRenamePromptPrefix guifg=#d3869b
+highlight LspSagaAutoPreview guifg=#b8bb26
+highlight ProviderTruncateLine guifg=#504945
+highlight DiagnosticTruncateLine guifg=#504945
+highlight LspSagaShTruncateLine guifg=#504945
+highlight LspSagaDocTruncateLine guifg=#504945
+highlight LspSagaCodeActionTruncateLine guifg=#504945
+highlight LineDiagTuncateLine guifg=#504945
