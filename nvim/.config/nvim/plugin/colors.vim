@@ -30,7 +30,7 @@ call ColorMyPencils()
 " Vim with me
 nnoremap <leader>cmp :call ColorMyPencils()<CR>
 nnoremap <leader>vwb :let g:theprimeagen_colorscheme =
-
+" ------------------------------------------------------------------------------
 " lisandrojm
 " Html highlighting
 hi htmltag guifg=#fe8019
