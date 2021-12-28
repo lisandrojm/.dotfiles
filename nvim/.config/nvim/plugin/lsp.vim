@@ -6,7 +6,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 fun! LspLocationList()
     " lua vim.lsp.diagnostic.set_loclist({open_loclist = false})
 endfun
-
+nnoremap <leader>vñ :lua vim.lsp.buf.declaration()<CR>
 nnoremap <leader>vd :lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
 nnoremap <leader>vv :lua vim.lsp.buf.hover()<CR>
