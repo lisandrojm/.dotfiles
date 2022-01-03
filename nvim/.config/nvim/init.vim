@@ -86,6 +86,7 @@ Plug 'sbdchd/neoformat'
 " Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 " Plug 'hoob3rt/lualine.nvim'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " /lisandrojm
 
 Plug 'easymotion/vim-easymotion'
