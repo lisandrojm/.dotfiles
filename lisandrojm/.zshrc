@@ -110,3 +110,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 [[ $TERM != "screen" ]] && exec tmux
+
+# zsh-syntax-highlighting
+source /home/lisandrojm/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# zsh-disabled the underline
+(( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+# zsh-autosuggestions
+typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
