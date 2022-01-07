@@ -120,3 +120,5 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 # zsh-autosuggestions
 typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
+
+alias sudo='nocorrect sudo'
