@@ -115,6 +115,9 @@ Plug 'simrat39/rust-tools.nvim'
 " lspsaga fork
 Plug 'tami5/lspsaga.nvim'
 
+"vCoolor
+Plug 'KabbAmine/vCoolor.vim'
+
 call plug#end()
 
 " Adding local modules
@@ -280,3 +283,8 @@ inoremap <C-l> <Del>
 
 " Remove blank lines
 nnoremap <Leader>bb :g/^$/d<CR>
+
+"vCoolor
+let g:vcoolor_lowercase = 1
+let g:vcoolor_disable_mappings = 1
+let g:vcoolor_map = '<A-c>'
