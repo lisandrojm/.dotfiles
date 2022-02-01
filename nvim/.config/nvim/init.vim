@@ -292,3 +292,7 @@ let g:vcoolor_map = '<A-c>'
 "Tabs
 nnoremap <A-l> :tabnext<CR>
 nnoremap <A-h> :tabprevious<CR>
+
+" Increasing or decreasing numbers
+nnoremap <A-k> <C-a>
+nnoremap <A-j> <C-x>
