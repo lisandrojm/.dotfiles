@@ -122,3 +122,6 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
 
 alias sudo='nocorrect sudo'
+
+# Terminal background color fix
+LS_COLORS+=':ow=01;33'

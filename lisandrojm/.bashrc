@@ -120,3 +120,5 @@ xset r rate 220 40
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 . "$HOME/.cargo/env"
+# Terminal background color fix
+LS_COLORS+=':ow=01;33'
