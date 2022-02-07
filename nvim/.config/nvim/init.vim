@@ -296,3 +296,6 @@ nnoremap <A-h> :tabprevious<CR>
 " Increasing or decreasing numbers
 nnoremap <A-k> <C-a>
 nnoremap <A-j> <C-x>
+
+" stop auto comment
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
