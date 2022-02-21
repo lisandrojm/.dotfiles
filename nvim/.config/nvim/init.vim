@@ -115,7 +115,7 @@ Plug 'simrat39/rust-tools.nvim'
 " lspsaga fork
 Plug 'tami5/lspsaga.nvim'
 
-"vCoolor
+" vCoolor
 Plug 'KabbAmine/vCoolor.vim'
 
 " devicons
@@ -288,12 +288,12 @@ inoremap <C-l> <Del>
 " Remove blank lines
 nnoremap <Leader>bb :g/^$/d<CR>
 
-"vCoolor
+" vCoolor
 let g:vcoolor_lowercase = 1
 let g:vcoolor_disable_mappings = 1
 let g:vcoolor_map = '<A-c>'
 
-"Tabs
+" Tabs
 nnoremap <A-l> :tabnext<CR>
 nnoremap <A-h> :tabprevious<CR>
 
@@ -304,5 +304,6 @@ nnoremap <A-j> <C-x>
 " stop auto comment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" devicons
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
