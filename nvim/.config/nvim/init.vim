@@ -118,6 +118,10 @@ Plug 'tami5/lspsaga.nvim'
 "vCoolor
 Plug 'KabbAmine/vCoolor.vim'
 
+" devicons
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 call plug#end()
 
 " Adding local modules
@@ -299,3 +303,6 @@ nnoremap <A-j> <C-x>
 
 " stop auto comment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
+let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
