@@ -23,6 +23,8 @@ fun! ColorMyPencils()
     hi netrwDir guifg=#5eacd3
     hi qfFileName guifg=#aed75f
     hi TelescopeBorder guifg=#5eacd
+    hi NERDTreeDir guifg=#5eacd3
+
 
 endfun
 call ColorMyPencils()
