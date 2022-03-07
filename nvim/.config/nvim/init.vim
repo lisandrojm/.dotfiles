@@ -305,5 +305,5 @@ nnoremap <A-j> <C-x>
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " devicons
-let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
-let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
+" let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
+" let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
