@@ -122,6 +122,9 @@ Plug 'KabbAmine/vCoolor.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+" " refactoring
+" Plug 'ThePrimeagen/refactoring.nvim'
+"
 call plug#end()
 
 " Adding local modules
