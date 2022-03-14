@@ -1,3 +1,5 @@
+-- "theprimeagen"
+
 -- local dap_install = require("dap-install")
 -- dap_install.config("chrome", {})
 --
@@ -19,6 +21,7 @@
 -- require('dap.ext.vscode').load_launchjs()
 
 ---------------------------------------------------
+
 -- nvim-dap
 local dap = require('dap')
 dap.adapters.node2 = {
