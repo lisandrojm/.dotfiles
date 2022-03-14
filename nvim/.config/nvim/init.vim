@@ -46,6 +46,10 @@ Plug 'nvim-treesitter/playground'
 Plug 'mfussenegger/nvim-dap'
 Plug 'Pocco81/DAPInstall.nvim'
 Plug 'szw/vim-maximizer'
+Plug 'janko/vim-test'
+Plug 'nvim-telescope/telescope-dap.nvim'
+Plug 'theHamsta/nvim-dap-virtual-text'
+Plug 'rcarriga/nvim-dap-ui'
 
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
