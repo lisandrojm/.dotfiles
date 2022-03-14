@@ -122,6 +122,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
 
 alias sudo='nocorrect sudo'
+alias v='nvim'
 
 # Terminal background color fix
 LS_COLORS+=':ow=01;33'
@@ -129,3 +130,4 @@ LS_COLORS+=':ow=01;33'
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
