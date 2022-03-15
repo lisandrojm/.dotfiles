@@ -109,7 +109,8 @@ xset r rate 220 40
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-[[ $TERM != "screen" ]] && exec tmux
+# [[ $TERM != "screen" ]] && exec tmux
+[ -z "$TMUX" ] && command -v tmux > /dev/null && TERM=xterm-256color && exec tmux
 
 # zsh-syntax-highlighting
 source /home/lisandrojm/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

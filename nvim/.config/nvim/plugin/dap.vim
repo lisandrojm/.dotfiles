@@ -4,9 +4,9 @@ nnoremap <leader>dh :lua require'dap'.toggle_breakpoint()<CR>
 " nnoremap <S-l> :lua require'dap'.step_into()<CR>
 " nnoremap <S-j> :lua require'dap'.step_over()<CR>
 " change S to Alt
-nnoremap <A-k> :lua require'dap'.step_out()<CR>
-nnoremap <A-l> :lua require'dap'.step_into()<CR>
-nnoremap <A-j> :lua require'dap'.step_over()<CR>
+nnoremap <A-u> :lua require'dap'.step_out()<CR>
+nnoremap <A-o> :lua require'dap'.step_into()<CR>
+nnoremap <A-i> :lua require'dap'.step_over()<CR>
 " nnoremap <leader>ds :lua require'dap'.stop()<CR>
 nnoremap <leader>ds :lua require'dap'.close()<CR>
 nnoremap <leader>dn :lua require'dap'.continue()<CR>
