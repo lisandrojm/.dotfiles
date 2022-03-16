@@ -126,3 +126,5 @@ LS_COLORS+=':ow=01;33'
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# solidity
+export PATH=$(pwd)/llvm13.0/bin:$PATH
