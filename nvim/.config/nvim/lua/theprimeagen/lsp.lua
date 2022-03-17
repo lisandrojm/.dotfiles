@@ -281,6 +281,7 @@ lspsaga.setup { -- defaults ...
 }
 
 ------------------------------------------------------------------------------
+-- If is active dont work on_attach on tsserver
 -- -- tsserver global config
 -- require'lspconfig'.tsserver.setup{
 --   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
