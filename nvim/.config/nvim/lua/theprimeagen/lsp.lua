@@ -109,14 +109,13 @@ local function create_noremap(type, opts)
 end
 
 local nnoremap = create_noremap("n", { noremap = true })
-local inoremap = create_noremap("i", { noremap = true })
 
 local function config(_config)
 	return vim.tbl_deep_extend("force", {
 		capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
         on_attach = function()
 			nnoremap("gd", ":lua vim.lsp.buf.definition()<CR>")
-			nnoremap("K", ":lua vim.lsp.buf.hover()<CR>")
+			nnoremap("Ñ", ":lua vim.lsp.buf.hover()<CR>")
 			nnoremap("<leader>vws", ":lua vim.lsp.buf.workspace_symbol()<CR>")
 			nnoremap("<leader>vd", ":lua vim.diagnostic.open_float()<CR>")
 			nnoremap("<leader>vh", ":lua vim.lsp.diagnostic.goto_next()<CR>")
@@ -124,7 +123,7 @@ local function config(_config)
 			nnoremap("<leader>vca", ":lua vim.lsp.buf.code_action()<CR>")
 			nnoremap("<leader>vrr", ":lua vim.lsp.buf.references()<CR>")
 			nnoremap("<leader>vrn", ":lua vim.lsp.buf.rename()<CR>")
-			inoremap("<C-h>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
+			nnoremap("<C-h>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
 		end,
 	}, _config or {})
 end
@@ -319,3 +318,4 @@ require'lspconfig'.tsserver.setup{
 --     -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 --     server:setup(opts)
 -- end)
+
