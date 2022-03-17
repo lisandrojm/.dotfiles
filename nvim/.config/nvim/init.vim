@@ -99,7 +99,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdcommenter'
 Plug 'mattn/emmet-vim'
-" Plug 'kabouzeid/nvim-lspinstall'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
@@ -130,6 +129,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Plug 'ThePrimeagen/refactoring.nvim'
 "
 Plug 'p00f/nvim-ts-rainbow'
+
+" Plug 'williamboman/nvim-lsp-installer'
 
 call plug#end()
 
