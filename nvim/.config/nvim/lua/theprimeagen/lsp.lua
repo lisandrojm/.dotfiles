@@ -281,16 +281,16 @@ lspsaga.setup { -- defaults ...
 }
 
 ------------------------------------------------------------------------------
--- tsserver global config
-require'lspconfig'.tsserver.setup{
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  root_dir = function() return vim.loop.cwd() end -- run lsp for javascript in any directory
-
-}
+-- -- tsserver global config
+-- require'lspconfig'.tsserver.setup{
+--   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+--   root_dir = function() return vim.loop.cwd() end -- run lsp for javascript in any directory
+--
+-- }
 
 ------------------------------------------------------------------------------
 -- --LspInstall configuration to test manual installation
--- --" Plug 'williamboman/nvim-lsp-installer'
+--
 --
 --
 -- local lsp_installer = require("nvim-lsp-installer")
@@ -318,4 +318,3 @@ require'lspconfig'.tsserver.setup{
 --     -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 --     server:setup(opts)
 -- end)
-
