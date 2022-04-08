@@ -38,3 +38,6 @@ fun! ToggleQFList(global)
         end
     endif
 endfun
+
+" null-ls format
+nnoremap <leader>vv :lua vim.lsp.buf.formatting_sync()<CR>

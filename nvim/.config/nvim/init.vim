@@ -40,6 +40,7 @@ Plug 'hrsh7th/cmp-nvim-lua'
 " Neovim Tree shitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
+Plug 'romgrk/nvim-treesitter-context'
 
 " Debugger Plugins
 " Plug 'puremourning/vimspector'
@@ -131,6 +132,10 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'p00f/nvim-ts-rainbow'
 
 " Plug 'williamboman/nvim-lsp-installer'
+
+" Plug 'jose-elias-alvarez/null-ls.nvim'
+
+
 
 call plug#end()
 

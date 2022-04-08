@@ -40,3 +40,12 @@ set cursorline
 
 " Set Splitscreen
 set splitbelow splitright
+
+"Speed
+let laded_matchparen=1
+set noshowmatch
+" set nocursorline
+set nocursorcolumn
+set lazyredraw
+" set scrolljump=8
+let html_no_rendering=1
