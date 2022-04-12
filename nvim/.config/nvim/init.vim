@@ -135,7 +135,7 @@ Plug 'p00f/nvim-ts-rainbow'
 
 " Plug 'jose-elias-alvarez/null-ls.nvim'
 
-
+Plug 'lewis6991/impatient.nvim'
 
 call plug#end()
 
@@ -322,3 +322,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " devicons
 " let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 " let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
+
+" Plug 'lewis6991/impatient.nvim' setup
+lua require('impatient')
