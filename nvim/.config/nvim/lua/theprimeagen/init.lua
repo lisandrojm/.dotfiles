@@ -1,5 +1,4 @@
 require("theprimeagen.telescope")
-require("theprimeagen.debugHelper")
 require("theprimeagen.git-worktree")
 require("theprimeagen.harpoon")
 -- require("theprimeagen.statusline")
@@ -8,6 +7,8 @@ require("theprimeagen.lsp")
 require("rust-tools").setup({})
 -- nvim-dap
 require("telescope").load_extension("dap")
+require("theprimeagen.debugHelper")
+require("theprimeagen.disable_builtin")
 
 -- require("null-ls").setup({})
 
