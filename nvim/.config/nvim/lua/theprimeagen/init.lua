@@ -5,8 +5,6 @@ require("theprimeagen.harpoon")
 require("theprimeagen.debugger")
 require("theprimeagen.lsp")
 require("rust-tools").setup({})
--- nvim-dap
-require("telescope").load_extension("dap")
 -- require("theprimeagen.debugHelper")
 require("theprimeagen.disable_builtin")
 
