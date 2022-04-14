@@ -5,7 +5,6 @@ require("theprimeagen.harpoon")
 require("theprimeagen.debugger")
 require("theprimeagen.lsp")
 require("rust-tools").setup({})
--- require("theprimeagen.debugHelper")
 require("theprimeagen.disable_builtin")
 
 -- require("null-ls").setup({})
