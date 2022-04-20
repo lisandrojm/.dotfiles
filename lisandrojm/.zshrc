@@ -124,7 +124,9 @@ typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
 
 alias sudo='nocorrect sudo'
 alias v='nvim'
-alias s='sudo shutdown now'
+alias sd='sudo shutdown now'
+alias sr='sudo reboot now'
+alias e='exit'
 
 # Terminal background color fix
 LS_COLORS+=':ow=01;33'
