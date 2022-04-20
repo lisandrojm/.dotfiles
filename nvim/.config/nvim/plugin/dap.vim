@@ -42,9 +42,9 @@ nnoremap <leader>dh :lua require"dap".toggle_breakpoint()<CR>
 nnoremap <leader>dH :lua require"dap".set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
 nnoremap <leader>ds :lua require'dap'.close()<CR>
 nnoremap <A-k> :lua require"dap".step_out()<CR>
-nnoremap <A-l> :lua require"dap".step_into()<CR>
+nnoremap <A-,> :lua require"dap".step_into()<CR>
 nnoremap <A-j> :lua require"dap".step_over()<CR>
-nnoremap <A-h> :lua require"dap".continue()<CR>
+nnoremap <A-m> :lua require"dap".continue()<CR>
 nnoremap <leader>dn :lua require"dap".run_to_cursor()<CR>
 nnoremap <leader>dk :lua require"dap".up()<CR>zz
 nnoremap <leader>dj :lua require"dap".down()<CR>zz
