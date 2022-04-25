@@ -45,7 +45,7 @@ Plug 'romgrk/nvim-treesitter-context'
 " Debugger Plugins
 " Plug 'puremourning/vimspector'
 Plug 'mfussenegger/nvim-dap'
-Plug 'Pocco81/DAPInstall.nvim'
+" Plug 'Pocco81/DAPInstall.nvim'
 Plug 'szw/vim-maximizer'
 Plug 'janko/vim-test'
 Plug 'nvim-telescope/telescope-dap.nvim'
