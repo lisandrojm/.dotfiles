@@ -325,4 +325,3 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Plug 'lewis6991/impatient.nvim' setup
 lua require('impatient')
-
