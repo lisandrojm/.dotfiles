@@ -40,7 +40,7 @@ Plug 'hrsh7th/cmp-nvim-lua'
 " Neovim Tree shitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
-Plug 'romgrk/nvim-treesitter-context'
+" Plug 'romgrk/nvim-treesitter-context'
 
 " Debugger Plugins
 " Plug 'puremourning/vimspector'
@@ -148,7 +148,7 @@ call plug#end()
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 lua require("theprimeagen")
-lua require'nvim-treesitter.configs'.setup { highlight = { enable = true }, indent = { enable = false }, incremental_selection = { enable = true }, textobjects = { enable = true }, rainbow = { enable = true, extended_mode = true }}
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true, additional_vim_regex_highlighting = false }, indent = { enable = false }, incremental_selection = { enable = true }, textobjects = { enable = true }, rainbow = { enable = true, extended_mode = true }}
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
 
