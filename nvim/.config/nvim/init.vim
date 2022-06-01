@@ -328,3 +328,11 @@ lua require('impatient')
 
 " checkhealth
 let g:loaded_perl_provider = 0
+
+" copilot
+nnoremap <A-1> :Copilot enable<cr>
+nnoremap <A-2> :Copilot disable<cr>
+nnoremap <A-3> :Copilot status<cr>
+
+let g:copilot_enable_on_startup = 1
+
