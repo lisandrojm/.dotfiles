@@ -11,12 +11,7 @@ set wildignore+=**/node_modules/*
 set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
-
-call plug#begin('~/.vim/plugged')
-
-" Yes, I am a sneaky snek now
-Plug 'ambv/black'
-
+call plug#begin('~/.vim/plugged') " Yes, I am a sneaky snek now Plug 'ambv/black'
 " Plebvim lsp Plugins
 Plug 'neovim/nvim-lspconfig'
 " Plug 'hrsh7th/nvim-compe'
@@ -95,7 +90,7 @@ Plug 'sbdchd/neoformat'
 " /lisandrojm
 
 Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdcommenter'
@@ -136,6 +131,11 @@ Plug 'p00f/nvim-ts-rainbow'
 " Plug 'jose-elias-alvarez/null-ls.nvim'
 
 Plug 'lewis6991/impatient.nvim'
+
+" nvim-tree.lua
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-web-devicons'
+
 
 call plug#end()
 
@@ -180,7 +180,7 @@ nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
 nnoremap <Leader>rp :resize 100<CR>
-nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
+" nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
 nnoremap <Leader>cpu a%" PRIu64 "<esc>
 nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 nnoremap <leader>gt <Plug>PlenaryTestFile
@@ -258,7 +258,7 @@ let g:user_emmet_leader_key='<C-5>'
 " emmet imap <C-y> to <C-p>
 imap ññ <C-5>,
 
-map <Leader>nt :NERDTreeFind<CR>
+" map <Leader>nt :NERDTreeFind<CR>
 
 " quick semi
 nnoremap <Leader>; $a;<Esc>
@@ -336,3 +336,14 @@ nnoremap <A-3> :Copilot status<cr>
 
 let g:copilot_enable_on_startup = 1
 
+
+" nvim-tree.lua
+nnoremap <leader>e :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
+" windows navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l

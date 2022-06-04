@@ -6,7 +6,7 @@ require("theprimeagen.harpoon")
 require("theprimeagen.lsp")
 require("rust-tools").setup({})
 require("theprimeagen.disable_builtin")
-
+require("theprimeagen.nvim-tree")
 -- require("null-ls").setup({})
 
 P = function(v)

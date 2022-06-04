@@ -49,3 +49,4 @@ set nocursorcolumn
 set lazyredraw
 " set scrolljump=8
 let html_no_rendering=1
+
