@@ -29,7 +29,6 @@ fun! ColorMyPencils()
     hi NvimTreeFolder guibg=#5eacd3
     hi NvimTreeFileIcon guifg=#5eacd3
     hi NvimTreeFileName guifg=#5eacd3
-    hi NvimTreeFolderEmpty guifg=#5eacd3
     " hi NvimTreeImageFile guifg=#5eacd3 ctermfg=175 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
     " hi NvimTreeGitDirty guifg=#81b88b ctermfg=108 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
     " hi NvimTreeGitDeleted guifg=#81b88b ctermfg=108 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -38,11 +37,11 @@ fun! ColorMyPencils()
     " hi NvimTreeGitRenamed guifg=#81b88b ctermfg=108 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
     " hi NvimTreeGitNew guifg=#81b88b ctermfg=108 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
     " hi NvimTreeIndentMarker guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-    hi NvimTreeSymlink guifg=#29b8d8 ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+    " hi NvimTreeSymlink guifg=#29b8d8 ctermfg=38 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
     " hi NvimTreeFolderIcon guifg=#5eacd3 ctermfg=74 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
     " hi NvimTreeRootFolder guifg=#5eacd3 ctermfg=249 guibg=NONE ctermbg=NONE gui=bold cterm=bold
-    hi NvimTreeExecFile guifg=#5eacd3 ctermfg=42 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-    hi NvimTreeSpecialFile guifg=#ffcc66 ctermfg=221 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+    " hi NvimTreeExecFile guifg=#5eacd3 ctermfg=42 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+    " hi NvimTreeSpecialFile guifg=#ffcc66 ctermfg=221 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
 
 
