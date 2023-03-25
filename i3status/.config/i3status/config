@@ -13,7 +13,9 @@ general {
 
 order += "memory"
 order += "cpu_usage"
+# order += "disk /"
 order += "disk /"
+order += "disk /home"
 order += "tztime local"
 
 memory {
@@ -27,6 +29,10 @@ cpu_usage {
 }
 
 disk "/" {
+    format = " %percentage_used Disk"
+}
+
+disk "/home" {
     format = " %percentage_used Disk"
 }
 

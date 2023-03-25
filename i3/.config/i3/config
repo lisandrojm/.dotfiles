@@ -151,6 +151,18 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+    colors {
+            background #000000
+            statusline #ffffff
+            separator #666666
+
+            focused_workspace  #000000 #ffffff #000000
+            active_workspace   #333333 #5f676a #ffffff
+            inactive_workspace #333333 #222222 #ffffff
+            urgent_workspace   #2f343a #900000 #ffffff
+            binding_mode       #2f343a #900000 #ffffff
+
+        }
 }
 
 mouse_warping none
@@ -166,3 +178,16 @@ exec --no-startup-id i3-msg 'workspace 2; exec kitty'
 assign [class="Brave-browser"] workspace 1
 assign [class="Firefox"] workspace 3
 assign [class="Google"] workspace 3
+
+# lisandrojm
+# class border  backgr. text    indicator child_border
+# client.focused #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2
+
+# class                 border  backgr. text    indicator child_border
+client.focused    #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2
+client.unfocused   #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2
+client.urgent       #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2
+client.placeholder  #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2
+
+client.background       #ffffff
+

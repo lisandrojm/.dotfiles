@@ -123,7 +123,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
 
 alias sudo='nocorrect sudo'
-alias v='nvim'
+alias v='lvim'
 alias sd='sudo shutdown now'
 alias sr='sudo reboot now'
 alias e='exit'
@@ -136,3 +136,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # solidity
 export PATH=$(pwd)/llvm13.0/bin:$PATH
+export GO111MODULE=on
+
+
+export OPENAI_API_KEY='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'
